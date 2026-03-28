@@ -1,0 +1,142 @@
+---
+import { experience, linkedInUrl } from "../data/experience";
+
+const recentJobs = experience.slice(0, 2);
+
+const marqueeImages = [
+  { src: "/portfolio/gallery/event-1.jpg", alt: "Event photo" },
+  { src: "/portfolio/gallery/event-2.jpg", alt: "Event photo" },
+  { src: "/portfolio/gallery/event-3.jpg", alt: "Event photo" },
+  { src: "/portfolio/gallery/event-4.jpg", alt: "Event photo" },
+  { src: "/portfolio/gallery/event-5.jpg", alt: "Event photo" },
+];
+---
+
+<section id="about" class="pt-8 pb-20">
+  <div class="px-6 max-w-2xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-stone-900 dark:text-stone-50 mb-6">About</h2>
+    <div class="space-y-4 text-base text-stone-500 dark:text-stone-400 leading-relaxed">
+      <p>For the past 7+ years I've been building web apps across startups and enterprise, handling thousands of users and systems that process millions of transactions.</p>
+      <p>Started in banking, then moved into logistics, fintech, and loyalty platforms. Now working on an insurance platform, improving their CRM and integrating AI workflows with a great team.</p>
+      <p>Lately I've been preparing codebases to be AI-ready &mdash; adding structure, guardrails, and feedback loops.</p>
+      <p>A lot of what I've learned comes from working with strong teams across different environments.</p>
+    </div>
+
+    <h3 class="text-sm font-medium text-stone-900 dark:text-stone-100 mt-14 mb-5">Recent work</h3>
+    <div class="space-y-4">
+
+      <div class="p-5 rounded-xl border border-stone-100 dark:border-stone-800">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 shrink-0 overflow-hidden bg-stone-100 dark:bg-stone-800 flex items-center justify-center" style="border-radius: 22%;">
+            <img
+              src="/portfolio/logos/imaginex.jpeg"
+              alt="ImagineX Studio"
+              class="w-full h-full object-cover"
+              onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'text-xs font-bold text-stone-400\'>IX</span>'"
+            />
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-stone-900 dark:text-stone-100">ImagineX Studio</h4>
+            <p class="text-xs text-stone-400 dark:text-stone-500 font-mono">software engineer · 2025 &mdash; present</p>
+          </div>
+        </div>
+        <p class="text-sm text-stone-500 dark:text-stone-400 leading-relaxed mb-3">Home warranty platform managing plans, activations, and customer flows.</p>
+        <ul class="space-y-2">
+          <li class="flex items-start gap-2.5 text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
+            <span class="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-stone-300 dark:bg-stone-600"></span>
+            Built a multi-zone system (portals, admin, activation) used by 500K+ users
+          </li>
+          <li class="flex items-start gap-2.5 text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
+            <span class="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-stone-300 dark:bg-stone-600"></span>
+            Developed plan activation flows with forms, payments, and real-time logic
+          </li>
+          <li class="flex items-start gap-2.5 text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
+            <span class="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-stone-300 dark:bg-stone-600"></span>
+            Created a shared UI system used across teams
+          </li>
+        </ul>
+      </div>
+
+      <div class="p-5 rounded-xl border border-stone-100 dark:border-stone-800">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 shrink-0 overflow-hidden bg-stone-100 dark:bg-stone-800 flex items-center justify-center" style="border-radius: 22%;">
+            <img
+              src="/portfolio/logos/shrine.jpeg"
+              alt="Shrine Development"
+              class="w-full h-full object-cover"
+              onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'text-xs font-bold text-stone-400\'>SD</span>'"
+            />
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-stone-900 dark:text-stone-100">Shrine Development</h4>
+            <p class="text-xs text-stone-400 dark:text-stone-500 font-mono">software engineer · 2023 &mdash; 2024</p>
+          </div>
+        </div>
+        <p class="text-sm text-stone-500 dark:text-stone-400 leading-relaxed mb-3">Healthtech loyalty platform for managing users, offices, rewards, and operations.</p>
+        <ul class="space-y-2">
+          <li class="flex items-start gap-2.5 text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
+            <span class="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-stone-300 dark:bg-stone-600"></span>
+            Built micro-frontends for a platform with 3M+ users
+          </li>
+          <li class="flex items-start gap-2.5 text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
+            <span class="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-stone-300 dark:bg-stone-600"></span>
+            Improved backend performance supporting 20K+ concurrent offices
+          </li>
+          <li class="flex items-start gap-2.5 text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
+            <span class="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-stone-300 dark:bg-stone-600"></span>
+            Launched a creator app for content uploads and distribution
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <a
+      href={linkedInUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 mt-8 text-sm text-stone-400 hover:text-stone-600 dark:hover:text-stone-300 transition-colors font-mono"
+    >
+      View full history on LinkedIn
+      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- Photo banner -->
+<div class="px-6 pb-20 max-w-2xl mx-auto">
+  <div class="flex flex-col items-center gap-5 mb-8">
+    <h3 class="text-xl font-semibold text-stone-900 dark:text-stone-100 text-center">Out in the field</h3>
+    <p class="text-sm text-stone-400 dark:text-stone-500 text-center">building, learning, sharing<br/>not everything happens behind a screen</p>
+    <a
+      href="#contact"
+      class="px-6 py-3 bg-stone-900 dark:bg-stone-100 text-stone-50 dark:text-stone-900 text-sm font-medium rounded-xl hover:bg-stone-800 dark:hover:bg-stone-200 transition-colors"
+    >
+      Let's build something
+    </a>
+  </div>
+
+  <div class="relative overflow-hidden rounded-xl">
+    <div class="marquee-row flex gap-3 w-max opacity-40">
+      {[...marqueeImages, ...marqueeImages, ...marqueeImages].map((img) => (
+        <div class="shrink-0 w-44 h-28 rounded-lg overflow-hidden bg-stone-200 dark:bg-stone-800">
+          <img src={img.src} alt={img.alt} class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+        </div>
+      ))}
+    </div>
+    <!-- Fade: bottom to transparent, covers images -->
+    <div class="absolute inset-0 bg-gradient-to-t from-stone-50 dark:from-stone-950 from-10% via-stone-50/40 dark:via-stone-950/40 via-50% to-transparent z-10"></div>
+  </div>
+</div>
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-33.333%); }
+  }
+  .marquee-row {
+    animation: marquee 30s linear infinite;
+  }
+</style>
