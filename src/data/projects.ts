@@ -17,12 +17,6 @@ export const projects: Project[] = [
     tech: ["TanStack Start", "Drizzle ORM", "Cloudflare Workers", "D1", "Cloudflare AI"],
   },
   {
-    title: "Project Two",
-    description: "Enterprise platform serving thousands of users with complex workflows.",
-    url: "#",
-    tech: ["React", "TanStack", "AWS", "PostgreSQL"],
-  },
-  {
     title: "Obsidian Protocol",
     description: "Premium fitness/personal training brand website.",
     url: "https://obsidian-protocol.sbenavds-account.workers.dev/",
